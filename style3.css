@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 16px;
+}
+form {
+    width: 90%;
+    position: absolute;
+    top: 11%;
+    font-size: 1.1rem;
+}
+  
+input[type=text], input[type=password], input[type=number], input[type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+ }
+  
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.container a, img {
+    position: absolute;
+    top: 15px;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+}
+.ewan {
+    width: 80%;
+    height: 55px;
+    background: #663399;
+    position: absolute;
+    bottom: 7%;
+    left: 10%;
+    border-radius: 7%;
+}
+.ewan a {
+    color: white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 1365px) {
+    form {
+        width: 70%;
+        left: 15%;
+        font-size: 1rem;
+    }
+    input[type=text], input[type=password], input[type=number], input[type=email] {
+        width: 100%;
+        padding: 9px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+     }
+
+    .ewan {
+        width: 35%;
+        height: 45px;
+        background: #663399;
+        position: absolute;
+        bottom: 3%;
+        left: 35%;
+        border-radius: 7%;
+    }
+    .ewan a{
+        font-size: 1.1rem;
+    }
+    .container a, img {
+        left: 10%;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 320px){
+    input[type=text], input[type=password], input[type=number], input[type=email] {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0 18px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+     }
+     .ewan {
+        width: 80%;
+        height: 45px;
+        bottom: 3%;
+        left: 10%;
+        border-radius: 10px;
+    }
+    .ewan a {
+        color: white;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+}
+
+/* for above 320 width */
+@media only screen and (min-width: 320px){
+    input[type=text], input[type=password], input[type=number], input[type=email] {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0 18px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+     }
+     .ewan {
+        width: 80%;
+        height: 45px;
+        bottom: 3%;
+        left: 10%;
+        border-radius: 10px;
+    }
+    .ewan a {
+        color: white;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+}

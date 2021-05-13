@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topics-container {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.first, .second{
+    z-index: -1;
+
+}
+.first {
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+.second{
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+.topics-head{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 0;
+}
+
+#first {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    font-weight: lighter;
+}
+
+#second {
+    position: absolute;
+    right: 20px;
+    top: 48px;
+    font-weight: lighter;
+}
+
+.topic-image {
+    width: 100%;
+}
+
+.topic-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topic-image p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.topic-center{
+    width: 100%;
+    height: 630px;
+}
+
+.video, .text {
+    width: 153px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 40px;
+    margin: 150px 15px 15px 15px;
+}
+
+.text img, .video img{
+    display: block;
+    width: 70px;
+    height: 69px;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.text p, .video p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.text {
+    background: #228b22;
+}
+
+.video{
+    background: #ffd700;
+}
+
+@media only screen and (max-width: 320px){
+    .first, .second { 
+       height: 220px;
+    }
+    .topic-center {
+        height: 430px;
+    }
+    .video, .text {
+        width: 113px;
+        height: 110px;
+        display: inline-block;
+        border-radius: 40px;
+        margin: 100px 15px 15px;
+    }
+    .text img, .video img{
+        display: block;
+        width: 60px;
+        height: 59px;
+        margin: auto;
+        margin-top: 25px;
+    }
+}
+
+/* for above 320 width */
+
+@media only screen and (min-width: 320px){
+    .first, .second { 
+       height: 220px;
+    }
+    .topic-center {
+        height: 430px;
+    }
+    .video, .text {
+        width: 113px;
+        height: 110px;
+        display: inline-block;
+        border-radius: 40px;
+        margin: 100px 15px 15px;
+    }
+    .text img, .video img{
+        display: block;
+        width: 60px;
+        height: 59px;
+        margin: auto;
+        margin-top: 25px;
+    }
+}
